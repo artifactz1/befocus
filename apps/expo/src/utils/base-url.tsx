@@ -18,10 +18,10 @@ export const getBaseUrl = () => {
 
   if (!localhost) {
     // return "https://turbo.t3.gg";
+    return "https://befocus-nu.vercel.app/";
     throw new Error(
       "Failed to get localhost. Please point to your production server.",
     );
   }
-  // return `http://${localhost}:3000`;
-  return 'https://befocus-nu.vercel.app/'
+  return `http://${localhost}:3000`;
 };
